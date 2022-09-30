@@ -66,7 +66,7 @@
           <target>1.8</target>
           <compilerArgs>
             <arg>-Xlint:deprecation</arg>
-            <arg>--enable-preview</arg> <!--only needed when using preview language features-->
+<!--            <arg>&#45;&#45;enable-preview</arg> &lt;!&ndash;only needed when using preview language features&ndash;&gt;-->
           </compilerArgs>
         </configuration>
 			</plugin>

@@ -14,7 +14,7 @@ import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class JwtTest {
+class JwtTest {
 
 	static RSAKey rsaKey;
 
@@ -63,7 +63,8 @@ public class JwtTest {
 	void testVerify() throws Exception {
 
 		JwtVerifiableCredential jwtVerifiableCredential = JwtVerifiableCredential.fromCompactSerialization(TestUtil.read(VerifyCredentialTest.class.getResourceAsStream("jwt.vc.jsonld")));
-		if (! jwtVerifiableCredential.verify_RSA_RS256(TestUtil.testRSAPublicKey)) throw new GeneralSecurityException("Invalid signature.");
+		if (!jwtVerifiableCredential.verify_RSA_RS256(TestUtil.testRSAPublicKey))
+			throw new GeneralSecurityException("Invalid signature.");
 
 		String jwtPayload = jwtVerifiableCredential.getJwsObject().getPayload().toString();
 		String jwtPayloadVerifiableCredential = jwtVerifiableCredential.getPayloadObject().toJson();

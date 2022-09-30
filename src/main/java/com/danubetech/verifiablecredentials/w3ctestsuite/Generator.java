@@ -42,7 +42,7 @@ public class Generator {
 
 		String input = readInput(new File(argInput));
 
-		if (input == null || input.trim().length() < 1) throw new NullPointerException();
+		if (input.trim().length() < 1) throw new NullPointerException();
 
 		// do the work
 
