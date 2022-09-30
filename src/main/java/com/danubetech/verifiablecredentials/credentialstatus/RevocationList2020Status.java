@@ -1,7 +1,6 @@
 package com.danubetech.verifiablecredentials.credentialstatus;
 
 import com.apicatalog.jsonld.loader.DocumentLoader;
-import com.danubetech.verifiablecredentials.CredentialSubject;
 import com.danubetech.verifiablecredentials.jsonld.VerifiableCredentialContexts;
 import com.danubetech.verifiablecredentials.jsonld.VerifiableCredentialKeywords;
 import com.fasterxml.jackson.annotation.JsonCreator;
